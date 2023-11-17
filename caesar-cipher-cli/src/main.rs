@@ -39,6 +39,11 @@ struct Args {
 // run it
 fn main() {
     let args = Args::parse();
+
+    if args.shift < 1 || args.shift > 25 {
+        println!("Shift must be between 1 and 25");
+        return;
+    }   
     if args.encrypt {
         println!("{}", encrypt(&args.message, args.shift));
     } else if args.decrypt {
