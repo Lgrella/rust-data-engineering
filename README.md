@@ -65,17 +65,19 @@ if args.shift < 1 || args.shift > 25 {
 cargo run --  --message "Off to the bunker. Every person for themselves" --encrypt --shift 10
 ```
 Example of Encrypt:
-!(encrypt)[encrypt.png]
+
+![encrypt](encrypt.png)
 
 **Decrypt:**
 ```
 cargo run --  --message "Ypp dy dro lexuob. Ofobi zobcyx pyb drowcovfoc" --decrypt --shift 10
 ```
 Example of Decrypt:
-!(decrypt)[decrypt.png]
+
+![decrypt](decrypt.png)
 
 Example of Output when Shift = 0:
-!(shiftfail)[shiftfail.png]
+![shiftfail](shiftfail.png)
 
 
 
